@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Multi-Level Indexing vs. Flexible # of Extents by eddiealbert</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/eddiealbert/File_System_Impl">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/eddiealbert/File_System_Impl/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/eddiealbert/File_System_Impl/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Multi-Level Indexing vs. Flexible # of Extents</h1>
+          <p>A look at sequential and random access speed, along with fragmentation in both file system implementations</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/eddiealbert">eddiealbert</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>
+<a id="what-metrics-have-to-be-considered-when-creating-a-file-system" class="anchor" href="#what-metrics-have-to-be-considered-when-creating-a-file-system" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What metrics have to be considered when creating a file system?</h3>
+
+<p>Fragmentation is one such metric to take into consideration when designing a file system. We measure this by looking at how much free space can't be used by our current implementation. The performance of random and sequential access of data blocks are also good metrics to optimize for when designing your system. </p>
+
+<h3>
+<a id="how-can-we-implement-a-file-system-that-performs-optimally-when-taking-these-three-metrics-into-consideration" class="anchor" href="#how-can-we-implement-a-file-system-that-performs-optimally-when-taking-these-three-metrics-into-consideration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How can we implement a file system that performs optimally when taking these three metrics into consideration?</h3>
+
+<p>I looked at two possible file system implementations as solutions.</p>
+
+<ul>
+<li>
+<strong>Multi-Level Indexing</strong>
+
+<ul>
+<li>Example paragraph</li>
+</ul>
+</li>
+<li><strong>Flexible # of Extents</strong></li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
